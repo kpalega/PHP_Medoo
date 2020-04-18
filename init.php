@@ -37,6 +37,30 @@ function &getRouter(): core\Router {
     global $router; return $router;
 }
 
+$db = null;
+try{
+function &getDB(){
+    global $conf, $db;
+    if(!isset($db)){
+        require_once 'Medoo/Medoo.class.php';
+        $db = new \Medoo\Medoo([
+            'database_type' => $conf->db_type,
+            'server' => $conf->db_server,
+            'database_name' => $conf->db_name,
+            'username' => $conf->db_user,
+            'password' => $conf->db_password,
+            'charset' => $conf->db_charset,
+            'collation' => $conf->db_collation,
+            'port' => $conf->db_port,
+            'option' => $conf->db_option 
+        ]);
+    }
+    return $db;
+    }
+} catch(\PDOException $ex){
+    getMessages()->addError("DB Error: ".$ex->getMessage());
+}
+
 require_once 'core/functions.php';
 
 session_start(); //uruchom lub kontynuuj sesję

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-04-09 18:09:23
+/* Smarty version 3.1.34-dev-7, created on 2020-04-18 19:14:51
   from 'D:\xampp\htdocs\BMI\app\view\calcView.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5e8f48b3b19730_50950940',
+  'unifunc' => 'content_5e9b358b8f0ce5_56814696',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3245c1146f0d96d3c8da90981cb3fdd10ca516af' => 
     array (
       0 => 'D:\\xampp\\htdocs\\BMI\\app\\view\\calcView.tpl',
-      1 => 1586378796,
+      1 => 1587230053,
       2 => 'file',
     ),
   ),
@@ -21,28 +21,28 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:messages.tpl' => 1,
   ),
 ),false)) {
-function content_5e8f48b3b19730_50950940 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5e9b358b8f0ce5_56814696 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3049462685e8f48b3947998_45114284', 'nav');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7246921795e9b358b748b09_17894175', 'nav');
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20362560865e8f48b39c7d67_72355977', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_17343505965e9b358b7c23b3_97708066', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "main.tpl");
 }
 /* {block 'nav'} */
-class Block_3049462685e8f48b3947998_45114284 extends Smarty_Internal_Block
+class Block_7246921795e9b358b748b09_17894175 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'nav' => 
   array (
-    0 => 'Block_3049462685e8f48b3947998_45114284',
+    0 => 'Block_7246921795e9b358b748b09_17894175',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -52,17 +52,19 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 logout">Wyloguj</a></li>
     <li class="active"><a href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_root;?>
 calcCompute">Kalkulator</a></li>
+    <li><a href="<?php echo $_smarty_tpl->tpl_vars['conf']->value->action_url;?>
+history">Historia</a></li>
 <?php
 }
 }
 /* {/block 'nav'} */
 /* {block 'content'} */
-class Block_20362560865e8f48b39c7d67_72355977 extends Smarty_Internal_Block
+class Block_17343505965e9b358b7c23b3_97708066 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_20362560865e8f48b39c7d67_72355977',
+    0 => 'Block_17343505965e9b358b7c23b3_97708066',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

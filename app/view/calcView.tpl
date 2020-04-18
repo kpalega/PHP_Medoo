@@ -3,6 +3,7 @@
 {block name=nav}
     <li><a href="{$conf->action_url}logout">Wyloguj</a></li>
     <li class="active"><a href="{$conf->action_root}calcCompute">Kalkulator</a></li>
+    <li><a href="{$conf->action_url}history">Historia</a></li>
 {/block}
 
 {block name=content} 

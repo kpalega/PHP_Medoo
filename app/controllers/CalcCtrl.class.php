@@ -74,6 +74,19 @@ class CalcCtrl {
 	}
         getMessages()->addInfo("Wykonano oblicznia.");
     }
+    
+    try{
+        getDB()->insert("wynik",[
+            "BMI" => $this->result->result,
+            "waga" => $this->form->weight,
+            "wzrost" => $this->form->height,
+            "data" => date("Y-m-d H:i:s")
+        ]);
+    }
+    catch(\PDOException $ex){
+        getMessages()->addError("DB Error: ".$ex->getMessage());
+    }
+    
     $this->generateView();
     }
     
